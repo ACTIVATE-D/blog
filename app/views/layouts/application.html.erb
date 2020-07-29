@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <meta charset="utf-8" />
+    <title><%= page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="container">
+
+      <div id="header">
+        <%= render "shared/header" %>
+      </div>
+
+      <div id="sidebar">
+        <%= yield %>
+      </div>
+
+      <div id="footer">
+        <%= render "shared/footer" %>
+      </div>
+    </div>
   </body>
 </html>
