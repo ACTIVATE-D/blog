@@ -1,0 +1,19 @@
+<% @page_tilte = "MEMBER MORE"%>
+
+<h1><%= @page_title %></h1>
+
+<p><%= link_to "EDIT", [:edit, @member] %></p>
+
+<table class="attrs">
+  <tr>
+    <th width="150"></th>
+    <td><%= @member.number %></td>
+  </tr>
+
+  <tr>
+    <th>USER NAME</th>
+    <td><%= @member.name %></td>
+  </tr>
+</table>
+
+
